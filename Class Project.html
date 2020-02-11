@@ -11,8 +11,13 @@
 
     <form action="signUp" method="GET">
       <div>
-        <input type="text" placeholder="First Name" name="First_Name" />
-        <input type="text" placeholder="Last Name" name="Last_Name" />
+        <input
+          type="text"
+          placeholder="First Name"
+          name="First_Name"
+          required
+        />
+        <input type="text" placeholder="Last Name" name="Last_Name" required />
       </div>
       <div>
         <input
@@ -20,14 +25,20 @@
           size="30"
           placeholder="Mobile Phone Number or Email"
           name="Contact_Info"
+          required
         />
       </div>
       <div>
-        <input type="password" placeholder="Password" name="Password" />
+        <input
+          type="password"
+          placeholder="Password"
+          name="Password"
+          required
+        />
       </div>
       <div>
         <p>Birthday</p>
-        <select name="Month">
+        <select name="Month" required>
           <option value="Jan">Jan</option>
           <option value="Feb">Feb</option>
           <option value="March">March</option>
@@ -42,7 +53,7 @@
           <option value="Dec">Dec</option>
         </select>
 
-        <select name="Days">
+        <select name="Days" required>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -51,7 +62,7 @@
           <option value="6">6</option>
         </select>
 
-        <select name="year">
+        <select name="year" required>
           <option value="1993">1993</option>
           <option value="1994">1994</option>
           <option value="1995">1995</option>
